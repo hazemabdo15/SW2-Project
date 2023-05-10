@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(250, 243, 236, 0.912);
+}
+
+#title1 {
+    margin: 40px;
+    margin-left: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    color: rgba(135, 69, 7, 0.912);
+}
+
+#link_new {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 20px;
+    margin: 40px;
+    padding: 10px;
+}
+
+#link_new:hover {
+    color: rgba(250, 243, 236, 0.912);
+}
+
+#link {
+    background-color: rgba(135, 69, 7, 0.912);
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 30px;
+}
+
+#all_department {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+#dep {
+    text-decoration: none;
+    color: rgb(207, 60, 60);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+#dep_detall {
+    border: 100px;
+    border-radius: 20px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(243, 220, 144);
+    margin: 30px;
+    border: 100px;
+    border-radius: 20px;
+}
+
+/* =================
+ form
+    =====================*/
+#title2 {
+    margin: 40px;
+    margin-left: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    color: rgba(135, 69, 7, 0.912);
+}
+
+form {
+    background-color: rgba(255, 136, 0, 0.801);
+    border: 30px;
+    margin: 60px;
+    width: 600px;
+    margin-left: 350px;
+}
+
+#name_dep,
+#code_dep,
+#btn_create_dep {
+    margin: 30px;
+}
+
+#btn_create_dep {
+    margin-left: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(135, 69, 7, 0.912)
+}
+
+input {
+    width: 500px;
+}

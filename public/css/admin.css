@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(250, 243, 236, 0.912);
+    margin-left: 200px;
+    padding: 30px;
+    height: 56;
+    margin: 200px;
+    margin-left: 400px;
+
+}
+
+h1 {
+    color: rgba(135, 69, 7, 0.912);
+}
+
+#bt1 {
+    margin: 15px;
+    background-color: rgba(251, 251, 250, 0.912);
+    width: 100px;
+    height: 40px;
+    color: rgba(135, 69, 7, 0.912);
+}
