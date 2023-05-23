@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" hrer="css/nn.css" />
+    <title> Edit Department</title>
+</head>
+
+<body >
+<h1 "> Edit {{department.name}}</h1>
+<form action="/departments/{{department._id}}?_method=PUT" method="post" id="form" >
+
+<div id="name_dep" >
+{{!-- name --}}
+<label for="name">Name
+<br>
+<input type='text' name='name'  value="{{department.name}}">
+</div>
+
+<div id="code_dep"">
+{{!-- code --}}
+<label for="code" >Code
+    <br>
+<input type='text' name='code' value="{{department.code}}" ">
+</div>
+
+
+{{!-- create --}}
+<div id="btn_create_dep" ">
+    <button type="submit"> Create</button>
+</div>
+</form>
+</body>
+
+</html>

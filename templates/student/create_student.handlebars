@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Student</title>
+</head>
+
+<body >
+<h1 "> Create New Student</h1>
+<form action="/student_admin"  method="post" >
+
+
+{{!-- name --}}
+<label for="name">Name
+<br>
+<input type='text' name='name' >
+
+<br>
+{{!-- email --}}
+<label for="email">Email
+    <br>
+<input type='email' name='email' >
+
+<br>
+{{!-- password --}}
+<label for="password">Password
+    <br>
+<input type='password' name='password' >
+<br>
+{{!-- acdmicNum --}}
+<label for="acdmicNum">AcdmicNum
+    <br>
+<input type='text' name='acdmicNum' >
+<br>
+{{!-- create --}}
+
+    <button type="submit"> Create</button>
+
+</form>
+</body>
+
+</html>
