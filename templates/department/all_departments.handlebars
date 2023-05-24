@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Departments</title>
+</head>
+
+<body >
+     <h1 id="title1"> Departments</h1>
+     <div id="link">
+     <a id="link_new" href="departments/create_department"> create a new  department</a>
+     {{#each  departments}}
+      <div>
+      <a  id="dep" href="/departments/{{_id}}">
+        <h2>{{name}}</h2></a>
+       </div>
+       <div>
+        <a  id="dep" href="/departments/{{_id}}/edit">Edit</a>
+         | 
+         <form action="/departments/{{_id}}?_method=DELETE" method="post">
+         <button type="submit">  Delete</button>
+         </form> 
+       </div>
+     {{/each}}
+
+   <button id="bt1" onclick="window.location='/admin'">Back</a>    
+
+</body>
+
+</html>
