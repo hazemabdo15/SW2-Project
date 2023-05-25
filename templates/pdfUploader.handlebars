@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js File Uploader</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            background-color: #333;
+            color: whitesmoke;
+        }
+
+        input,
+        button {
+            font: inherit;
+            width: max-content;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>File Upload Example</h1>
+    <form action="http://localhost:5000/doctorPage/subjectPdfUpload/{{subjectId}}" method="POST" enctype="multipart/form-data">
+      <label for="file">Select a PDF file to upload:</label><br>
+      <input type="file" id="file" name="file"><br><br>
+      <input type="submit" value="Upload">
+</body>
+
+</html>

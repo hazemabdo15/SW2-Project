@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" hrer="css/nn.css" />
+    <title>Create New Department</title>
+</head>
+
+<body >
+<h1 > Create New Department</h1>
+<form action="/departments" method="post" id="form" >
+
+<div id="name_dep" >
+{{!-- name --}}
+<label for="name">Name
+<br>
+<input type='text' name='name' ">
+</div>
+
+<div id="code_dep"">
+{{!-- code --}}
+<label for="code">Code
+    <br>
+<input type='text' name='code' ">
+</div>
+
+
+{{!-- create --}}
+<div id="btn_create_dep" ">
+    <button type="submit"> Create</button>
+</div>
+</form>
+<button  id="bt1" onclick="window.location='/departments'">Back</a> 
+</body>
+
+</html>
