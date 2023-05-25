@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Doctor</title>
+</head>
+
+<body>
+    <h1> Edit {{editformdoctor.name}}</h1>
+    <form action="/doctor_admin/{{editformdoctor._id}}?_method=PUT" method="post">
+
+
+        {{!-- name --}}
+        <label for="name">Name
+            <br>
+            <input type='text' name='name' value="{{editformdoctor.name}}">
+
+            <br>
+            {{!-- email --}}
+            <label for="email">Email
+                <br>
+                <input type='email' name='email' value="{{editformdoctor.email}}">
+                <br>
+                {{!-- password --}}
+                <label for="password">Password
+                    <br>
+                    <input type='password' name='password' value="{{editformdoctor.password}}">
+
+                    <br>
+
+                    {{!-- Edit --}}
+
+                    <button type="submit"> Edit</button>
+    </form>
+        <button  id="bt1" onclick="window.location ='/doctor_admin'">Back</a>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assugnments</title>
+  </head>
+  <body>
+<h1>PDFS</h1>
+    {{#each pdf}}
+    <button class="btn btn-info" onclick="window.location.href= '{{filename}}'">
+    show {{filename}}
+    </button>
+    <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/uploads/{{filename}}" class="download-link" download> download:{{filename}}</a>
+    <br><br>
+    {{/each}}
+  </body>
+</html>
