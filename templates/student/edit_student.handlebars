@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+
+<body>
+    <h1> Edit {{editformstudent.name}}</h1>
+    <form action="/student_admin/{{editformstudent._id}}?_method=PUT" method="post">
+
+
+        {{!-- name --}}
+        <label for="name">Name
+            <br>
+            <input type='text' name='name' value="{{editformstudent.name}}">
+
+            <br>
+            {{!-- email --}}
+            <label for="email">Email
+                <br>
+                <input type='email' name='email' value="{{editformstudent.email}}">
+
+                <br>s
+                {{!-- password --}}
+                <label for="password">Password
+                    <br>
+                    <input type='password' name='password' value="{{editformstudent.password}}">
+                    <br>
+                    {{!-- acdmicNum --}}
+                    <label for="acdmicNum">AcdmicNum
+                        <br>
+                        <input type='text' name='acdmicNum' value="{{editformstudent.acdmicNum}}">
+                        <br>
+
+
+
+                        {{!-- edit --}}
+
+                        <button type="submit"> Edit</button>
+
+    </form>
+        <button id="bt1" onclick="window.location= '/student_admin'">Back</a>
+</body>
+
+</html>
