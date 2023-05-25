@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+     crossorigin="anonymous">
+    <link rel="stylesheet" hrer="css/subject.css ">
+    {{#each css}}
+        <link rel="stylesheet" href="../css/subject.css">
+    {{/each}}
+    <title>Subjects</title>
+</head>
+<style>
+  body {
+    background-color: #d1eaf4;
+}
+
+  h1 {
+   text-align: center;
+   font-size: 37px;
+    color:#065258;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+#all_sub {
+  width: 500px;
+  margin-left:700px;
+  margin-top:80px;
+  margin-bottom:100px;
+  
+}
+#link{
+  text-decoration: none;
+  color:#065258;
+  font-size: 25px;
+}
+#link:hover{
+  color: crimson;
+} 
+#sub{
+    
+    color: #065258;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 20px;
+
+}
+#del{
+  background-color:#d1eaf4;
+  color: #065258;
+  font-style: oblique;
+  border-color:#065258;
+  border-radius: 15px;
+  float:right;
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style:italic;
+}
+
+#del:hover{
+  background-color:crimson;
+  color:white;
+  
+}
+#edit {
+  text-decoration: none;
+  color: #065258;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style:italic;
+  font-size: 20px;
+}
+
+#edit:hover {
+color:crimson;
+  
+}
+#bt1{
+ 
+  background-color:#d1eaf4;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style:italic;
+  border-color:#0a393d;
+  border-width: 3px;
+  margin-left: 500px;
+  width: 120px;
+  height: 60px;
+  font-weight: bold;
+  color: #0a393d;
+  margin-bottom: 15px;
+  margin-top:15px;
+  
+}
+#bt1:hover{
+
+  background-color:#0a393d;
+ color:white
+}
+
+
+
+</style>
+<body>
+     <h1> Subjects</h1>
+     <a href="subjects/create_subject" id="link"> +Create a new  subject</a>
+  <div id="all_sub">
+     {{#each  subjects }}
+    <div  >
+      <a id="sub" href="/subjects/{{_id}}"><h2>{{name}}</h2></a>
+    </div>
+       <div class="d-flex justfiy-content-between">
+        <a id="edit" href="/subjects/{{_id}}/edit">Edit</a>
+         
+         <form action="/subjects/{{_id}}?_method=DELETE" method="post">
+         <button id="del" type="submit" class="btn btn-light">  Delete</button>
+         </form>
+       </div>
+ </div>
+       {{/each}}
+       <button  id="bt1" class="btn btn-light" onclick="window.location='/admin'">Back</a>
+      
+</body>
+
+
+
+</html>

@@ -1,0 +1,118 @@
+body {
+    background-color: #d1eaf4;
+}
+
+#title1 {
+   text-align: center;
+   font-size: 37px;
+    color:#0a393d;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+#bt1{
+    
+    background-color:#d1eaf4;
+ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    border-color:#0a393d;
+    border-width: 3px;
+    margin-left: 60px;
+    width: 120px;
+    height: 60px;
+    font-weight: bold;
+    color: #0a393d;
+    
+    
+}
+#bt1:hover{
+ 
+    background-color:#0a393d;
+   color:white
+}
+
+
+#link_new {
+    text-decoration: none;
+    color: #0a393d;
+    font-size: 25px;
+}
+#link_new:hover{
+    color: crimson;
+} 
+#all_department {
+    width: 500px;
+    margin-left:600px;
+    margin-top:80px;
+    margin-bottom:100px;
+    
+}
+
+#dep{
+    text-decoration: none;
+    color: #0a393d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 20px;
+}
+#edit {
+    text-decoration: none;
+    color: #065258 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 20px;
+}
+
+#edit:hover {
+  color:crimson;
+    
+}
+
+#del{
+    background-color:#d1eaf4;
+    color: #0a393d;
+    font-style: oblique;
+    border-color:#0a393d;
+    border-radius: 15px;
+    float:right;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+
+#del:hover{
+    background-color:crimson;
+    color:white;
+    
+}
+
+/* =================
+ form
+    =====================*/
+#title2 {
+    margin: 40px;
+    margin-left: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    color: rgba(135, 69, 7, 0.912);
+}
+
+
+
+#name_dep,
+#code_dep,
+#btn_create_dep {
+    margin: 30px;
+}
+
+#btn_create_dep {
+    margin-left: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(135, 69, 7, 0.912)
+}
+
+input {
+    width: 500px;
+}

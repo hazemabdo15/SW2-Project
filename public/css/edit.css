@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(250, 243, 236, 0.912);
+}
+
+#hedit{
+    margin: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    text-align:center ;
+    color: rgba(135, 69, 7, 0.912);
+}
+#btn_create_dep{
+    text-align:center ;
+    color: rgba(135, 69, 7, 0.912);
+}
+#edcode{
+  color: rgba(135, 69, 7, 0.912);
+}
+#ed{
+    color: rgba(135, 69, 7, 0.912);
+
+}

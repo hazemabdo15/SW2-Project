@@ -1,0 +1,99 @@
+body {
+    background-color: #d1eaf4;
+}
+#title{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    color:#0a393d;
+    margin-bottom:30px;
+    margin-top: 240px;
+    margin-left:500px;
+}
+label{
+    color:#0a393d;
+    font-size: 30px;
+}
+#name-dep{
+    margin-left: 500px;
+    margin-right: 500px;
+   
+    margin-bottom:15px;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+#c{
+ 
+    background-color:#d1eaf4;
+ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    border-color:#0a393d;
+    border-width: 3px;
+    margin-left: 500px;
+    width: 120px;
+    height: 60px;
+    font-weight: bold;
+    color: #0a393d;
+    margin-bottom: 15px;
+    
+}
+#c:hover{
+ 
+    background-color:#0a393d;
+   color:white
+}
+#bt1{
+ 
+    background-color:#d1eaf4;
+ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    border-color:#0a393d;
+    border-width: 3px;
+    margin-left: 500px;
+    width: 120px;
+    height: 60px;
+    font-weight: bold;
+    color: #0a393d;
+    margin-bottom: 15px;
+    
+}
+#bt1:hover{
+ 
+    background-color:#0a393d;
+   color:white
+}
+#code_dep{
+    margin-left: 500px;
+    margin-right: 500px;
+    height: 55px;
+    margin-bottom:15px;
+    font-style: oblique;
+    color: #0a393d;
+
+}
+#hedit{
+    margin: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    text-align:center ;
+    color: rgba(135, 69, 7, 0.912);
+}
+#ed{
+    text-align:center ;
+    color: rgba(135, 69, 7, 0.912);
+}
+#edcode{
+  color: rgba(135, 69, 7, 0.912);
+}
+#ed{
+    
+        background-color:rgba(250, 243, 236, 0.912);
+        color:rgb(157, 70, 9);
+        font-style: oblique;
+        border-color:rgb(157, 70, 9) ;
+       
+
+}
